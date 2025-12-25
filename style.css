@@ -1,0 +1,134 @@
+/* https://ru.wix.com/website-template/view/html/2502?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates&tpClick=view_button&esi=f45129d3-26f5-4268-8feb-b4977c7388fd*/
+
+.zedalogo {
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+}
+
+.logo {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 7rem;
+  font-weight: bold;
+}
+
+nav {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+nav a {
+  border-right: 1px solid black;
+  padding: 20px;
+  width: 10rem;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+nav a:nth-child(1) {
+  border-left: 1px solid black;
+}
+
+footer {
+  border-top: 0.1rem solid black;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+}
+
+.isari svg {
+  height: 50px;
+  width: 20px;
+}
+
+.contact h1 {
+  font-weight: bold;
+}
+
+.names {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/*ეს Input-ების ზემოთ რომ სახელები აწერია იმის სტილია*/
+label {
+  color: gray;
+}
+/*სახელის და გვარის სტილი*/
+.firstname,
+.lastname {
+  margin: 5px;
+}
+/*ასევე, ოღონდ input-ების*/
+.fname,
+.lname {
+  width: 260px;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+/*ეს ემაილის ადგილის გასტილვაა*/
+.email {
+  margin: 5px;
+  margin-top: 20px;
+}
+/* ეს ემაილის ჩასაწერი ადგილის სტილია*/
+.emailinput {
+  width: 565px;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+/*ეს მესიჯის სტილია*/
+.message {
+  margin: 5px;
+  margin-top: 20px;
+}
+/*ეს კი მესიჯის ჩასაწერი ადგილის სტილია*/
+.messageinput {
+  width: 565px;
+  height: 100px;
+  border: none;
+  border-bottom: 1px solid gray;
+  margin-top: 20px;
+}
+/*ეს როდესაც input-ს ვაჭერთ, გარშემო ბორდერები რო გაუქროს იმის გასტილვაა*/
+input:focus {
+  outline: none;
+}
+/*ეს ფორმის ღილაკის სტილია*/
+.submit {
+  display: block;
+  margin: auto;
+  border: none; /* ამით border-ს ვაუქმებთ*/
+  font-size: 18px;
+  width: 200px; /*სიგრძის ცვლილები*/
+  height: 40px;
+  color: white;
+  background-color: rgba(88, 25, 170, 0.822);
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.copyright {
+  display: flex;
+  background-color: rgba(228, 219, 219, 0.548);
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.copyright p span {
+  text-decoration: underline;
+  cursor: pointer;
+}
