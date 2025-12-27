@@ -1,7 +1,13 @@
 /* https://ru.wix.com/website-template/view/html/2502?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates&tpClick=view_button&esi=f45129d3-26f5-4268-8feb-b4977c7388fd*/
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .zedalogo {
- text-align: center; 
+  text-align: center;
   font-size: 1.5rem;
   letter-spacing: 3px;
 }
@@ -32,6 +38,81 @@ nav a {
 }
 nav a:nth-child(1) {
   border-left: 1px solid black;
+}
+
+.main {
+}
+.FEATURED_POST {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 50rem;
+  width: 50rem;
+}
+.absol {
+  height: 1.5rem;
+  width: 20rem;
+  border: 0.1rem solid black;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 100;
+  letter-spacing: 0.4em;
+  position: relative;
+  z-index: 2;
+  margin-bottom: -2rem;
+  background-color: white;
+}
+.suratiani {
+  border: 0.1rem solid black;
+  padding-bottom: 3rem;
+  z-index: 1;
+}
+.suratiani p,
+h2 {
+  margin-left: 2rem;
+}
+.suratiani p:last-child {
+  font-size: 1.2rem;
+}
+
+.galurjeba:hover {
+  color: blue;
+}
+.never{
+  width: 100%;
+  height: 20rem;
+  border-top: 0.1rem solid black;
+  border-bottom: 0.1rem solid black;
+  display: flex;
+   justify-content: space-around;
+   align-items: center;
+   
+}
+.never h1 {
+  margin-bottom: 7rem;
+  font-size: 3rem;
+}
+.email :nth-child(n+1){
+border: none;
+padding: 1rem;
+}
+#email{
+  border-bottom: 0.1rem solid black;
+}
+.subscribe{
+  width: 10rem;
+  color: white;
+  background-color: rgb(90, 45, 173);
+  cursor: pointer;
+  transition: 1s;
+  margin-left: 1rem;
+  
+  }
+.subscribe:hover{
+   background-color: black;
 }
 
 footer {
