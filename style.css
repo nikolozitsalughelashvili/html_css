@@ -1,11 +1,5 @@
 /* https://ru.wix.com/website-template/view/html/2502?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates&tpClick=view_button&esi=f45129d3-26f5-4268-8feb-b4977c7388fd*/
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .zedalogo {
   text-align: center;
   font-size: 1.5rem;
@@ -81,40 +75,111 @@ h2 {
 .galurjeba:hover {
   color: blue;
 }
-.never{
+.never {
   width: 100%;
   height: 20rem;
   border-top: 0.1rem solid black;
   border-bottom: 0.1rem solid black;
   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   
+  justify-content: space-around;
+  align-items: center;
 }
 .never h1 {
   margin-bottom: 7rem;
   font-size: 3rem;
 }
-.email :nth-child(n+1){
-border: none;
-padding: 1rem;
+.email :nth-child(n + 1) {
+  border: none;
+  padding: 1rem;
 }
-#email{
+#email {
   border-bottom: 0.1rem solid black;
 }
-.subscribe{
+.subscribe {
   width: 10rem;
   color: white;
   background-color: rgb(90, 45, 173);
   cursor: pointer;
   transition: 1s;
   margin-left: 1rem;
-  
-  }
-.subscribe:hover{
-   background-color: black;
+}
+.subscribe:hover {
+  background-color: black;
+}
+.mtavari {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  border-right: 0.1rem solid black;
+  margin-bottom: 100rem;
+}
+.left h2 {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+  width: 48%;
+  letter-spacing: 0.7rem;
+  font-weight: 100;
 }
 
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  margin-top: 1rem;
+  margin-bottom: 100rem;
+}
+
+.surati_texti {
+  border: 0.1rem solid black;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.texti {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.qvedatexti {
+  width: 90%;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.205);
+}
+.viewcomments {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.moreposts {
+  width: 10rem;
+  height: 3rem;
+  color: white;
+  background-color: rgb(90, 45, 173);
+  cursor: pointer;
+  transition: 1s;
+  margin-left: 1rem;
+}
+
+.moreposts:hover {
+  background-color: black;
+}
 footer {
   border-top: 0.1rem solid black;
 }
