@@ -1,5 +1,90 @@
 /* https://ru.wix.com/website-template/view/html/2502?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates&tpClick=view_button&esi=f45129d3-26f5-4268-8feb-b4977c7388fd*/
 
+#burgermenu {
+  display: none; /*ლეიბლით ვნიშნავთ და აქ აღარ გვჭირდება რომ გამოჩნდეს */
+}
+.menu-label {
+  width: 2.5rem;
+  height: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  display: none; /* @media-ზე გამოჩნდება */
+}
+.menu-label span {
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #000;
+  transition: all 0.5s ease; /* ანიმაცია */
+}
+
+#burgermenu:checked ~ .menu-label span:nth-child(1) {
+  transform: rotate(45deg) translate(10px, 10px);
+  background-color: red;
+}
+
+/* 5️⃣ ANIMATION - მეორე ხაზი (შუა)
+   
+   მეორე ხაზი უბრალოდ ქრება:
+   - opacity: 0 - სრულიად გამჭვირვალე
+   */
+
+#burgermenu:checked ~ .menu-label span:nth-child(2) {
+  opacity: 0;
+}
+
+/* 6️⃣ ANIMATION - მესამე ხაზი (ქვედა)
+   
+   მესამე ხაზი -45 გრადუსით მბრუნდება:
+   - rotate(-45deg) - უკანა ბრუნი
+   - translate(10px, -10px) - ზემოთ მოგვალიდება
+   
+   შედეგი: X-ის ქვედა ნახევარი
+   
+   კომბინირებული ეფექტი: ≡ ხდება X-ი */
+
+#burgermenu:checked ~ .menu-label span:nth-child(3) {
+  transform: rotate(-45deg) translate(10px, -10px);
+  background-color: red;
+}
+
+.mobile-nav {
+  flex-direction: column;
+  width: 50%;
+  margin-top: 2rem;
+  margin-left: 10rem;
+  gap: 1rem;
+  display: none;
+  position: fixed;
+  inset: 0;
+  transition: all 0.3s ease;
+}
+
+#burgermenu:checked ~ .mobile-nav {
+  display: flex;
+}
+@media (max-width: 600px) {
+  header {
+    opacity: 0;
+  }
+
+  .logo h1 {
+    font-size: 1.4rem;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  /* ბურგერის აიკონი მხოლოდ მობილურზე ჩნდება */
+  .menu-label {
+    margin: 10rem 25rem;
+    display: flex;
+  }
+}
+
 .zedalogo {
   text-align: center;
   font-size: 1.5rem;
@@ -29,6 +114,7 @@ nav a {
   text-decoration: none;
   text-align: center;
   color: black;
+  text-wrap: nowrap;
 }
 nav a:nth-child(1) {
   border-left: 1px solid black;
