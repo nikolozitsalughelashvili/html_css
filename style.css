@@ -61,7 +61,10 @@
   inset: 0;
   transition: all 0.3s ease;
 }
-
+.mobile-nav a {
+  text-decoration: none;
+  color: black;
+}
 #burgermenu:checked ~ .mobile-nav {
   display: flex;
 }
@@ -85,6 +88,12 @@
   }
 }
 
+@media (min-width: 600px) {
+  .mobile-nav {
+    display: none !important;
+  }
+}
+
 .zedalogo {
   text-align: center;
   font-size: 1.5rem;
@@ -97,7 +106,6 @@
   font-size: 7rem;
   font-weight: bold;
 }
-
 nav {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
@@ -196,7 +204,7 @@ h2 {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 .left {
   width: 65%;
@@ -208,7 +216,7 @@ h2 {
   border-right: 0.1rem solid black;
   margin-bottom: 100rem;
 }
-.left h2 {
+.mtavari h2 {
   margin-top: 3.5rem;
   margin-bottom: 3.5rem;
   width: 48%;
@@ -219,12 +227,13 @@ h2 {
 .right {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 35%;
   margin-top: 1rem;
   margin-bottom: 100rem;
 }
+/* .surati { height: 353px; }*/
 
 .surati_texti {
   border: 0.1rem solid black;
@@ -250,7 +259,6 @@ h2 {
 }
 .viewcomments {
   display: flex;
-  gap: 1.5rem;
 }
 
 .moreposts {
@@ -266,7 +274,115 @@ h2 {
 .moreposts:hover {
   background-color: black;
 }
-footer {
+
+.right p {
+  margin: 2rem 0;
+  width: 282px;
+  line-height: 2rem;
+  font-size: large;
+}
+.right a {
+  margin: 2rem 0;
+  margin-left: -10rem;
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+.right a:hover {
+  color: blue;
+}
+.xazi {
+  margin: 2rem 0;
+  width: 282px;
+  height: 0.07rem;
+  background-color: black;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.grid img {
+  width: 7rem;
+  display: block;
+  transition: 0.3s ease;
+}
+.gridimg {
+  position: relative;
+  overflow: hidden;
+}
+.imgcover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.205);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+.imgcover p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.gridimg:hover img {
+  filter: brightness(70%);
+}
+.gridimg:hover .imgcover {
+  opacity: 1;
+}
+.right a:nth-of-type(2) {
+  border-top: 0.1rem solid black;
+  border-bottom: 0.1rem solid black;
+  margin: 2rem;
+  padding: 1rem 1.5rem;
+}
+.right i {
+  margin: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.right a:nth-of-type(2):hover {
+  color: black;
+}
+
+.rightemail {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 5rem;
+}
+.rightemail :nth-child(n + 1) {
+  height: 2.2rem;
+}
+.rightchecklabel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rightchecklabel label {
+  margin-top: 1rem;
+}
+.rightsubscribe {
+  border: none;
+  height: 3rem !important;
+  background-color: rgb(95, 5, 179);
+  color: white;
+}
+
+.rightsubscribe:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+. footer {
   border-top: 0.1rem solid black;
 }
 .contact {
