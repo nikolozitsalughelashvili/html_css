@@ -216,6 +216,7 @@ h2 {
   border-right: 0.1rem solid black;
   margin-bottom: 100rem;
 }
+
 .mtavari h2 {
   margin-top: 3.5rem;
   margin-bottom: 3.5rem;
@@ -479,4 +480,38 @@ input:focus {
 .copyright p span {
   text-decoration: underline;
   cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+  .surati_texti {
+    width: 80%;
+  }
+}
+@media (max-width: 940px) {
+  .never {
+    flex-direction: column;
+    padding-bottom: 5rem;
+  }
+}
+
+@media (max-width: 840px) {
+  .suratiani {
+    width: 90%;
+  }
+  .suratiani img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .mtavari {
+    flex-direction: column;
+  }
+  .left {
+    border-right: none;
+    width: 100%;
+    margin-bottom: 50px !important;
+  }
+  .right {
+    width: 100%;
+    margin-bottom: 50px !important;
+  }
 }
