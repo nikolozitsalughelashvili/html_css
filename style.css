@@ -83,7 +83,7 @@
 
   /* ბურგერის აიკონი მხოლოდ მობილურზე ჩნდება */
   .menu-label {
-    margin: 10rem 25rem;
+    margin: 10rem 40rem;
     display: flex;
   }
 }
@@ -133,8 +133,7 @@ nav a:nth-child(1) {
   color: blueviolet;
   font-size: x-large;
 }
-.main {
-}
+
 .FEATURED_POST {
   margin: auto;
   display: flex;
@@ -388,7 +387,7 @@ h2 {
   cursor: pointer;
 }
 
-. footer {
+.footer {
   border-top: 0.1rem solid black;
 }
 .contact {
