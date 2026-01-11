@@ -151,13 +151,12 @@ main {
   justify-content: start;
   margin-top: 3rem;
   width: 100%;
-}
-
-.myblognav a {
+ a {
   width: 5rem;
   text-decoration: none;
   color: black;
   text-wrap: nowrap;
+}
 }
 
 .selected {
@@ -165,30 +164,29 @@ main {
   color: rgb(101, 147, 207) !important;
 }
 
-.leftright {
+
+
+.mtliani{
   display: flex;
+  flex-direction: column;
   justify-content: start;
   margin-top: 3rem;
   width: 100%;
   gap: 2rem;
-}
 
-.myblogleft,
-.myblogright {
-  width: 29rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
-}
+
 
 .myblogsurati_texti {
   border: 0.1rem solid black;
   width: 100%;
   display: flex;
-  flex-direction: column;
-  margin-bottom: 2rem;
+  gap 2rem;
+  img {
+  width: 50% !important;
+  height: auto !important;
 }
+
+
 
 .myblogtexti {
   display: flex;
@@ -197,12 +195,9 @@ main {
   align-items: flex-start;
   margin: 1rem 1.5rem;
   line-height: 1.5rem;
-}
+}}}
 
-.myblogsurati_texti img {
-  width: 100% !important;
-  height: auto !important;
-}
+
 
 .galurjeba:hover {
   color: blue;
@@ -213,7 +208,7 @@ main {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-}
+
 .samtertil {
   position: relative;
   overflow: hidden;
@@ -224,7 +219,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+
 .tert1 {
   position: absolute;
   top: -0.3rem;
@@ -246,7 +241,33 @@ main {
   left: 0.8rem;
   font-size: 1.3rem;
   font-weight: 700;
-}
+}}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .footer {
   border-top: 0.1rem solid black;
 }
