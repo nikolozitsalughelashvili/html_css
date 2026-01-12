@@ -145,7 +145,6 @@ nav a:nth-child(1) {
   color: black;
   text-wrap: nowrap;
 }
-
 main {
   display: flex;
   flex-direction: column;
@@ -154,7 +153,8 @@ main {
   width: 100%;
   border-bottom: 0.1rem solid black;
 }
-.myblog_mtavari {
+.about_mtavari {
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   width: 60rem;
@@ -163,97 +163,41 @@ main {
 
   /* background-color: #8f86865e; */
 }
-.myblognav {
-  display: flex;
-  justify-content: start;
-  margin-top: 3rem;
-  width: 100%;
-  a {
-    width: 5rem;
-    text-decoration: none;
-    color: black;
-    text-wrap: nowrap;
-  }
-}
 
 .selected {
   font-weight: 700;
   color: rgb(101, 147, 207) !important;
 }
 
-.mtliani {
+.aboutsurati_texti {
+  border: 0.1rem solid black;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  margin-top: 3rem;
-  width: 100%;
-  gap: 2rem;
-
-  .myblogsurati_texti {
-    border: 0.1rem solid black;
-    width: 100%;
-    display: flex;
-    gap: 2rem;
-    img {
-      width: 50% !important;
-      height: auto !important;
-    }
-
-    .myblogtexti {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      margin: 1rem 1.5rem;
-      line-height: 1.5rem;
-    }
-  }
+  margin-bottom: 2rem;
 }
 
-.galurjeba:hover {
-  color: blue;
-}
-
-.trgsamtertil {
+.abouttexti {
   display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 2rem 10rem 2rem 2rem;
+  line-height: 1.5rem;
+}
 
-  .samtertil {
-    position: relative;
-    overflow: hidden;
-    width: 2rem;
-    height: 3rem;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.abouttexti h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
 
-    .tert1 {
-      position: absolute;
-      top: -0.3rem;
-      left: 0.8rem;
-      font-size: 1.3rem;
-      font-weight: 700;
-    }
-
-    .tert2 {
-      position: absolute;
-      top: 0rem;
-      left: 0.8rem;
-      font-size: 1.3rem;
-      font-weight: 700;
-    }
-    .tert3 {
-      position: absolute;
-      top: 0.35rem;
-      left: 0.8rem;
-      font-size: 1.3rem;
-      font-weight: 700;
-    }
-  }
+.abouttexti p {
+  font-family: "Inter", sans-serif;
+}
+.aboutsurati_texti img {
+  width: 100% !important;
+  height: auto !important;
+  border-bottom: 0.1rem solid black;
 }
 
 .footer {
@@ -353,4 +297,38 @@ input:focus {
 .copyright p span {
   text-decoration: underline;
   cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+  .surati_texti {
+    width: 80%;
+  }
+}
+@media (max-width: 940px) {
+  .never {
+    flex-direction: column;
+    padding-bottom: 5rem;
+  }
+}
+
+@media (max-width: 840px) {
+  .suratiani {
+    width: 90%;
+  }
+  .suratiani img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .mtavari {
+    flex-direction: column;
+  }
+  .left {
+    border-right: none;
+    width: 100%;
+    margin-bottom: 50px !important;
+  }
+  .right {
+    width: 100%;
+    margin-bottom: 50px !important;
+  }
 }

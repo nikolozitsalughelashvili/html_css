@@ -117,7 +117,8 @@ nav {
   margin-top: 3rem;
 }
 
-nav a {
+nav a,
+.socqseli {
   border-right: 1px solid black;
   padding: 20px;
   width: 10rem;
@@ -127,8 +128,22 @@ nav a {
   text-wrap: nowrap;
 }
 
+#lupa {
+  padding-right: 150px;
+}
+
 nav a:nth-child(1) {
   border-left: 1px solid black;
+}
+
+.socqseli a {
+  border: none !important;
+  padding: 5px;
+  width: 2rem;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  text-wrap: nowrap;
 }
 
 main {
@@ -137,6 +152,7 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
+  border-bottom: 0.1rem solid black;
 }
 
 .myblog_mtavari {
@@ -145,7 +161,6 @@ main {
   width: 60rem;
   margin-bottom: 0rem;
   padding-bottom: 2rem;
-  border-bottom: 0.1rem solid black;
   /* background-color: #8f86865e; */
 }
 
@@ -179,8 +194,9 @@ main {
   border: 0.1rem solid black;
   width: 100%;
   display: flex;
+  gap: 2rem;
 }
-.mtliani .myblogsurati_texti gap img {
+.mtliani .myblogsurati_texti img {
   width: 50% !important;
   height: auto !important;
 }

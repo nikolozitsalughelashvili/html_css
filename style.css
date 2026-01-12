@@ -118,7 +118,8 @@ nav {
   margin-top: 3rem;
 }
 
-nav a {
+nav a,
+.socqseli {
   border-right: 1px solid black;
   padding: 20px;
   width: 10rem;
@@ -127,10 +128,23 @@ nav a {
   color: black;
   text-wrap: nowrap;
 }
+
+#lupa {
+  padding-right: 150px;
+}
 nav a:nth-child(1) {
   border-left: 1px solid black;
 }
 
+.socqseli a {
+  border: none !important;
+  padding: 5px;
+  width: 2rem;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  text-wrap: nowrap;
+}
 .selected {
   font-weight: 700;
   color: rgb(101, 147, 207);
@@ -211,6 +225,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  border-bottom: 0.1rem solid black;
 }
 .left {
   width: 65%;
