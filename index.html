@@ -1,13 +1,12 @@
-<!--/* https://ru.wix.com/website-template/view/html/2502?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates&tpClick=view_button&esi=f45129d3-26f5-4268-8feb-b4977c7388fd*/-->
+<!-- https://wix.com/website-template/view/html/2502?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates&tpClick=view_button&esi=f45129d3-26f5-4268-8feb-b4977c7388fd -->
 <!-- https://nikolozitsalughelashvili.github.io/html_css/ -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Train of Thought</title>
-    <!-- ეს გუგლის ფონტების ლინკებია, რომელიც გვჭირდება რომ ვებგვერდზე გამოვიყენოთ Work Sans ფონტი -->
 
+    <!-- ეს გუგლის ფონტების ლინკებია, რომელიც გვჭირდება რომ ვებგვერდზე გამოვიყენოთ Work Sans ფონტი -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+
     <!-- ასევე მოგვაქვს Font Awesome-ის ლინკი რომ გამოვიყენოთ მათი აიკონები -->
     <link
       rel="stylesheet"
@@ -26,7 +26,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- ეს კი ჩვენი სტილის ფაილია სადაც გვაქვს ყველა CSS კოდი -->
     <link rel="stylesheet" href="style.css" />
+    <title>Train of Thought</title>
   </head>
   <body>
     <input type="checkbox" id="burgermenu" />
@@ -40,53 +43,63 @@
       <a href="about.html">About</a>
       <a href="myblog.html">My Blog</a>
       <a href="#contact">Contact</a>
-      <a href="https://www.google.com/webhp"
-       class="fa-solid fa-magnifying-glass"></a>
-      <a href="https://www.facebook.com/"
-        class="fa-brands fa-facebook-f"></a>
-      <a  href="https://www.instagram.com/" class="fa-brands fa-instagram"></a>
-      <a href="https://x.com/" class="fa-brands fa-twitter"></a>
-      <a href="https://www.pinterest.com/" class="fa-brands fa-pinterest-p"></a>
       <a href="login.html">Login</a>
-      <a href="signup.html">Signup</a>
-      <a href="bug404.html">Bug404</a>
+      <a href="404.html">404</a>
+      <div class="mobile-nav-socials">
+        <a
+          href="https://www.google.com/webhp"
+          class="fa-solid fa-magnifying-glass"
+        ></a>
+        <a href="https://www.facebook.com/" class="fa-brands fa-facebook-f"></a>
+        <a href="https://www.instagram.com/" class="fa-brands fa-instagram"></a>
+        <a href="https://x.com/" class="fa-brands fa-twitter"></a>
+        <a
+          href="https://www.pinterest.com/"
+          class="fa-brands fa-pinterest-p"
+        ></a>
+      </div>
     </div>
 
     <header>
       <div class="zedalogo">EVERYTHING IS PERSONAL. INCLUDING THIS BLOG.</div>
       <div class="logo">Train of Thought</div>
-      <nav>
+      <nav class="navbar">
         <!-- id-ს დახმარებით ჩვენ შეგვიძლია ღილაკზე დაჭერისას შესაბამის ადგილას ჩამოსვლა -->
         <a href="index.html" class="selected">Home</a>
         <a href="about.html">About</a>
         <a href="myblog.html">My Blog</a>
         <a href="#contact">Contact</a>
-        <a href="https://www.google.com/webhp" class="fa-solid fa-magnifying-glass" id="lupa"></a>
+        <a
+          href="https://www.google.com/webhp"
+          class="fa-solid fa-magnifying-glass"
+          id="lupa"
+        ></a>
         <div class="socqseli">
-         <a href="https://www.facebook.com/"
-        class="fa-brands fa-facebook-f"></a>
-      <a  href="https://www.instagram.com/" class="fa-brands fa-instagram"></a>
-      <a href="https://x.com/" class="fa-brands fa-twitter"></a>
-      <a href="https://www.pinterest.com/" class="fa-brands fa-pinterest-p"></a>
+          <a
+            href="https://www.facebook.com/"
+            class="fa-brands fa-facebook-f"
+          ></a>
+          <a
+            href="https://www.instagram.com/"
+            class="fa-brands fa-instagram"
+          ></a>
+          <a href="https://x.com/" class="fa-brands fa-twitter"></a>
+          <a
+            href="https://www.pinterest.com/"
+            class="fa-brands fa-pinterest-p"
+          ></a>
         </div>
         <a href="login.html">Login</a>
-        <a href="signup.html">Signup</a>
-        <a href="bug404.html">Bug404</a>
+        <a href="404.html">404</a>
       </nav>
     </header>
 
     <main>
       <div class="FEATURED_POST">
-        <div class="absol">FEATURED POST</div>
         <div class="suratiani">
+          <div class="absol">FEATURED POST</div>
           <img
-            alt="Back to Fiction: What I'm Reading This Summer"
-            class="gallery-item-visible gallery-item gallery-item-preloaded"
-            data-hook="gallery-item-image-img"
-            data-idx="0"
             src="https://static.wixstatic.com/media/c22c23_89024a2cd2e943a6b89d99404958e3bb~mv2.jpg/v1/fill/w_940,h_411,fp_0.50_0.50,q_90,enc_avif,quality_auto/c22c23_89024a2cd2e943a6b89d99404958e3bb~mv2.webp"
-            loading="eager"
-            style="width: 940px; height: 411px"
           />
           <p>Admin</p>
           <p>Mar 23, 2023 · 2 min read</p>
@@ -119,13 +132,7 @@
           <h2>TRAIN OF THOUGHT</h2>
           <div class="surati_texti">
             <img
-              alt="Do Not Leave Tokyo Before Eating This Ramen"
-              class="gallery-item-visible gallery-item gallery-item-preloaded"
-              data-hook="gallery-item-image-img"
-              data-idx="0"
               src="https://static.wixstatic.com/media/c22c23_e3b5cb121db549fdbb1590f51d378b8c~mv2.png/v1/fill/w_265,h_354,fp_0.50_0.50,q_95,enc_avif,quality_auto/c22c23_e3b5cb121db549fdbb1590f51d378b8c~mv2.webp"
-              loading="eager"
-              style="width: 265px; height: 353.333px"
             />
 
             <div class="texti">
@@ -158,7 +165,6 @@
               data-idx="1"
               src="https://static.wixstatic.com/media/c22c23_5ab44dfe10f84b5e90e19db16bd06ae3~mv2.png/v1/fill/w_265,h_354,fp_0.50_0.50,q_95,enc_avif,quality_auto/c22c23_5ab44dfe10f84b5e90e19db16bd06ae3~mv2.webp"
               loading="eager"
-              style="width: 265px; height: 353.333px"
             />
 
             <div class="texti">
@@ -191,7 +197,6 @@
               data-idx="2"
               src="https://static.wixstatic.com/media/c22c23_5a6f262789ea450393f4b3c6bc3247df~mv2.jpg/v1/fill/w_265,h_354,fp_0.50_0.50,q_90,enc_avif,quality_auto/c22c23_5a6f262789ea450393f4b3c6bc3247df~mv2.webp"
               loading="eager"
-              style="width: 265px; height: 353.333px"
             />
             <div class="texti">
               <p>Mar 23, 2023 · 1 min read</p>
@@ -223,7 +228,6 @@
               data-idx="3"
               src="https://static.wixstatic.com/media/c22c23_56862fbf994d49a3a136f14547e6194c~mv2_d_1920_1342_s_2.png/v1/fill/w_265,h_354,fp_0.50_0.50,q_95,enc_avif,quality_auto/c22c23_56862fbf994d49a3a136f14547e6194c~mv2_d_1920_1342_s_2.webp"
               loading="eager"
-              style="width: 265px; height: 353.333px"
             />
 
             <div class="texti">
@@ -256,7 +260,6 @@
               data-idx="4"
               src="https://static.wixstatic.com/media/c22c23_ea4c50693f8f473b9ba056fc36032ae4~mv2.jpg/v1/fill/w_265,h_354,fp_0.50_0.50,q_90,enc_avif,quality_auto/c22c23_ea4c50693f8f473b9ba056fc36032ae4~mv2.webp"
               loading="eager"
-              style="width: 265px; height: 353.333px"
             />
 
             <div class="texti">
@@ -289,7 +292,6 @@
               data-idx="5"
               src="https://static.wixstatic.com/media/c22c23_89024a2cd2e943a6b89d99404958e3bb~mv2.jpg/v1/fill/w_265,h_354,fp_0.50_0.50,q_90,enc_avif,quality_auto/c22c23_89024a2cd2e943a6b89d99404958e3bb~mv2.webp"
               loading="eager"
-              style="width: 265px; height: 353.333px"
             />
 
             <div class="texti">
@@ -322,7 +324,6 @@
               data-idx="6"
               src="https://static.wixstatic.com/media/c22c23_a31ea2b671fe4cddbbb5728c9310c756~mv2_d_5659_3773_s_4_2.jpg/v1/fill/w_265,h_354,fp_0.50_0.50,q_90,enc_avif,quality_auto/c22c23_a31ea2b671fe4cddbbb5728c9310c756~mv2_d_5659_3773_s_4_2.webp"
               loading="eager"
-              style="width: 265px; height: 353.333px"
             />
 
             <div class="texti">
@@ -354,8 +355,6 @@
           <h2>ABOUT ME</h2>
 
           <img
-            loading="lazy"
-            sizes="282px"
             srcset="
               https://static.wixstatic.com/media/c22c23_97d2c6c58ccd4969a250c18f8b079b3d~mv2_d_1959_1212_s_2.png/v1/crop/x_60,y_0,w_1713,h_1212/fill/w_282,h_198,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/portrait%20eliza.png 1x,
               https://static.wixstatic.com/media/c22c23_97d2c6c58ccd4969a250c18f8b079b3d~mv2_d_1959_1212_s_2.png/v1/crop/x_60,y_0,w_1713,h_1212/fill/w_564,h_396,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/portrait%20eliza.png 2x
@@ -363,9 +362,6 @@
             id="img_comp-jysgtul0"
             src="https://static.wixstatic.com/media/c22c23_97d2c6c58ccd4969a250c18f8b079b3d~mv2_d_1959_1212_s_2.png/v1/crop/x_60,y_0,w_1713,h_1212/fill/w_282,h_198,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/portrait%20eliza.png"
             alt=""
-            class="NM_OGj Tj01hh"
-            width="282"
-            height="198"
             style="object-fit: cover; border: 0.1rem solid black"
           />
           <p>
@@ -380,7 +376,7 @@
           <div class="grid">
             <div class="gridimg">
               <img
-                src="https://images.squarespace-cdn.com/content/v1/61505c55c04b0a138b337894/1645392354605-KP1A18JWX5FAWEV29EAS/image-asset.png"
+                src="https://wixmp-19e700b7666f74a00729a0dd.wixmp.com/Instagram/Personal_Blog/01.jpg"
                 alt=""
               />
               <div class="imgcover">
@@ -391,7 +387,7 @@
             </div>
             <div class="gridimg">
               <img
-                src="https://images.squarespace-cdn.com/content/v1/61505c55c04b0a138b337894/1645392354605-KP1A18JWX5FAWEV29EAS/image-asset.png"
+                src="https://wixmp-19e700b7666f74a00729a0dd.wixmp.com/Instagram/Personal_Blog/02.jpg"
                 alt=""
               />
               <div class="imgcover">
@@ -402,7 +398,7 @@
             </div>
             <div class="gridimg">
               <img
-                src="https://images.squarespace-cdn.com/content/v1/61505c55c04b0a138b337894/1645392354605-KP1A18JWX5FAWEV29EAS/image-asset.png"
+                src="https://wixmp-19e700b7666f74a00729a0dd.wixmp.com/Instagram/Personal_Blog/03.jpg"
                 alt=""
               />
               <div class="imgcover">
@@ -413,7 +409,7 @@
             </div>
             <div class="gridimg">
               <img
-                src="https://images.squarespace-cdn.com/content/v1/61505c55c04b0a138b337894/1645392354605-KP1A18JWX5FAWEV29EAS/image-asset.png"
+                src="https://wixmp-19e700b7666f74a00729a0dd.wixmp.com/Instagram/Personal_Blog/04.jpg"
                 alt=""
               />
               <div class="imgcover">
@@ -424,7 +420,7 @@
             </div>
             <div class="gridimg">
               <img
-                src="https://images.squarespace-cdn.com/content/v1/61505c55c04b0a138b337894/1645392354605-KP1A18JWX5FAWEV29EAS/image-asset.png"
+                src="https://wixmp-19e700b7666f74a00729a0dd.wixmp.com/Instagram/Personal_Blog/05.jpg"
                 alt=""
               />
               <div class="imgcover">
@@ -435,7 +431,7 @@
             </div>
             <div class="gridimg">
               <img
-                src="https://images.squarespace-cdn.com/content/v1/61505c55c04b0a138b337894/1645392354605-KP1A18JWX5FAWEV29EAS/image-asset.png"
+                src="https://wixmp-19e700b7666f74a00729a0dd.wixmp.com/Instagram/Personal_Blog/06.jpg"
                 alt=""
               />
               <div class="imgcover">
@@ -446,7 +442,7 @@
             </div>
             <div class="gridimg">
               <img
-                src="https://images.squarespace-cdn.com/content/v1/61505c55c04b0a138b337894/1645392354605-KP1A18JWX5FAWEV29EAS/image-asset.png"
+                src="https://wixmp-19e700b7666f74a00729a0dd.wixmp.com/Instagram/Personal_Blog/07.jpg"
                 alt=""
               />
               <div class="imgcover">
@@ -457,7 +453,7 @@
             </div>
             <div class="gridimg">
               <img
-                src="https://images.squarespace-cdn.com/content/v1/61505c55c04b0a138b337894/1645392354605-KP1A18JWX5FAWEV29EAS/image-asset.png"
+                src="https://wixmp-19e700b7666f74a00729a0dd.wixmp.com/Instagram/Personal_Blog/08.jpg"
                 alt=""
               />
               <div class="imgcover">
@@ -468,7 +464,7 @@
             </div>
             <div class="gridimg">
               <img
-                src="https://images.squarespace-cdn.com/content/v1/61505c55c04b0a138b337894/1645392354605-KP1A18JWX5FAWEV29EAS/image-asset.png"
+                src="https://wixmp-19e700b7666f74a00729a0dd.wixmp.com/Instagram/Personal_Blog/09.jpg"
                 alt=""
               />
               <div class="imgcover">
@@ -479,7 +475,7 @@
             </div>
             <div class="gridimg">
               <img
-                src="https://images.squarespace-cdn.com/content/v1/61505c55c04b0a138b337894/1645392354605-KP1A18JWX5FAWEV29EAS/image-asset.png"
+                src="https://wixmp-19e700b7666f74a00729a0dd.wixmp.com/Instagram/Personal_Blog/10.jpg"
                 alt=""
               />
               <div class="imgcover">
@@ -563,65 +559,65 @@
           </svg>
         </div>
         <h1>Drop Me a Line, Let Me Know What You Think</h1>
-        <!-- ამასაც შუაზე ვყოფთ ორი ნაწილად და მარჯვნივ არის საკონტაქტო ფორმა -->
-        <div class="contact-right">
-          <!-- ეს ფორმის დასაწყისია, სადაც არის სხვადასხვა ველები სახელის, ელფოსტის და მესიჯის შესასვლელად -->
-          <form action="">
-            <div class="names">
-              <div class="firstname">
-                <!-- ეს სახელის ველია, სადაც შეგვიძლია ჩავწეროთ სახელი -->
-                <label for="fname">First Name *</label>
-                <br />
-                <input
-                  class="fname"
-                  type="text"
-                  id="fname"
-                  name="fname"
-                  required
-                />
-                <!-- ეს required ნიშნავს რომ ველი სავალდებულოა და არ იმუშავებს ფორმა თუ ეს ველი ცარიელია -->
-              </div>
-              <div class="lastname">
-                <!-- ეს გვარის ველია, სადაც შეგვიძლია ჩავწეროთ გვარი -->
-                <label for="lname">Last Name *</label>
-                <br />
-                <input
-                  class="lname"
-                  type="text"
-                  id="lname"
-                  name="lname"
-                  required
-                />
-              </div>
-            </div>
-            <div class="email">
-              <!-- ეს იმეილის ველია, სადაც შეგვიძლია ჩავწეროთ იმეილი -->
-              <label for="email">Email *</label>
-              <br />
+
+        <!-- ეს ფორმის დასაწყისია, სადაც არის სხვადასხვა ველები სახელის, ელფოსტის და მესიჯის შესასვლელად -->
+
+        <form action="">
+          <div class="names">
+            <div class="form-group">
+              <!-- ეს სახელის ველია, სადაც შეგვიძლია ჩავწეროთ სახელი -->
+              <label for="fname">First Name *</label>
+
               <input
-                class="emailinput"
-                type="email"
-                id="email"
-                name="email"
+                class="fname"
+                type="text"
+                id="fname"
+                name="fname"
+                required
+              />
+              <!-- ეს required ნიშნავს რომ ველი სავალდებულოა და არ იმუშავებს ფორმა თუ ეს ველი ცარიელია -->
+            </div>
+            <div class="form-group">
+              <!-- ეს გვარის ველია, სადაც შეგვიძლია ჩავწეროთ გვარი -->
+              <label for="lname">Last Name *</label>
+
+              <input
+                class="lname"
+                type="text"
+                id="lname"
+                name="lname"
                 required
               />
             </div>
-            <div class="message">
-              <!-- ეს მესიჯის ველია, სადაც შეგვიძლია ჩავწეროთ მესიჯი, სპეციალური თეგი გამოვიყენეთ დიდი ადგილისთვის -->
-              <label for="message">message...</label>
-              <br />
-              <textarea
-                class="messageinput"
-                id="message"
-                name="message"
-                rows="5"
-                required
-              ></textarea>
-            </div>
-            <!-- ეს კი ფორმის გასაშვები ღილაკია -->
-            <button class="submit" type="submit">Submit</button>
-          </form>
-        </div>
+          </div>
+
+          <!-- ეს იმეილის ველია, სადაც შეგვიძლია ჩავწეროთ იმეილი -->
+          <div class="form-group">
+            <label for="emailId">Email *</label>
+            <input
+              class="emailinput"
+              type="email"
+              id="emailId"
+              name="email"
+              required
+            />
+          </div>
+
+          <div class="message form-group">
+            <!-- ეს მესიჯის ველია, სადაც შეგვიძლია ჩავწეროთ მესიჯი, სპეციალური თეგი გამოვიყენეთ დიდი ადგილისთვის -->
+            <label for="message">message...</label>
+
+            <textarea
+              class="messageinput"
+              id="message"
+              name="message"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <!-- ეს კი ფორმის გასაშვები ღილაკია -->
+          <button class="submit" type="submit">Submit</button>
+        </form>
       </section>
 
       <!-- ეს კი ბოლოსართის ბოლო ნაწილი სადაც არის კოპირაითი -->

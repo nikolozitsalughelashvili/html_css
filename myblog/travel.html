@@ -1,11 +1,11 @@
 <!--/* https://ru.wix.com/website-template/view/html/2502?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates&tpClick=view_button&esi=f45129d3-26f5-4268-8feb-b4977c7388fd*/-->
 <!-- https://nikolozitsalughelashvili.github.io/html_css/ -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travel</title>
+    <title>My Top 5</title>
     <!-- ეს გუგლის ფონტების ლინკებია, რომელიც გვჭირდება რომ ვებგვერდზე გამოვიყენოთ Work Sans ფონტი -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,6 +26,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="travel.css" />
   </head>
   <body>
@@ -37,31 +38,35 @@
     </label>
     <div class="mobile-nav">
       <a href="../index.html">Home</a>
-      <a href="#about">About</a>
+      <a href="../about.html">About</a>
       <a href="../myblog.html">My Blog</a>
       <a href="#contact">Contact</a>
-      <a
-        href="https://www.google.com/webhp"
-        class="fa-solid fa-magnifying-glass"
-      ></a>
-      <a href="https://www.facebook.com/" class="fa-brands fa-facebook-f"></a>
-      <a href="https://www.instagram.com/" class="fa-brands fa-instagram"></a>
-      <a href="https://x.com/" class="fa-brands fa-twitter"></a>
-      <a href="https://www.pinterest.com/" class="fa-brands fa-pinterest-p"></a>
       <a href="../login.html">Login</a>
-      <a href="../signup.html">Signup</a>
-      <a href="../bug404.html">Bug404</a>
+      <a href="../404.html">404</a>
+      <div class="mobile-nav-socials">
+        <a
+          href="https://www.google.com/webhp"
+          class="fa-solid fa-magnifying-glass"
+        ></a>
+        <a href="https://www.facebook.com/" class="fa-brands fa-facebook-f"></a>
+        <a href="https://www.instagram.com/" class="fa-brands fa-instagram"></a>
+        <a href="https://x.com/" class="fa-brands fa-twitter"></a>
+        <a
+          href="https://www.pinterest.com/"
+          class="fa-brands fa-pinterest-p"
+        ></a>
+      </div>
     </div>
 
     <header>
       <div class="zedalogo">EVERYTHING IS PERSONAL. INCLUDING THIS BLOG.</div>
       <div class="logo">Train of Thought</div>
-      <nav>
+      <nav class="navbar">
         <!-- id-ს დახმარებით ჩვენ შეგვიძლია ღილაკზე დაჭერისას შესაბამის ადგილას ჩამოსვლა -->
         <a href="../index.html">Home</a>
         <a href="../about.html">About</a>
         <a href="../myblog.html" class="selected">My Blog</a>
-        <a href="../index.html#contact">Contact</a>
+        <a href="#contact">Contact</a>
         <a
           href="https://www.google.com/webhp"
           class="fa-solid fa-magnifying-glass"
@@ -83,11 +88,9 @@
           ></a>
         </div>
         <a href="../login.html">Login</a>
-        <a href="../signup.html">Signup</a>
-        <a href="../bug404.html">Bug404</a>
+        <a href="../404.html">404</a>
       </nav>
     </header>
-
     <main>
       <div class="myblog_mtavari">
         <div class="myblognav">
@@ -250,65 +253,65 @@
           </svg>
         </div>
         <h1>Drop Me a Line, Let Me Know What You Think</h1>
-        <!-- ამასაც შუაზე ვყოფთ ორი ნაწილად და მარჯვნივ არის საკონტაქტო ფორმა -->
-        <div class="contact-right">
-          <!-- ეს ფორმის დასაწყისია, სადაც არის სხვადასხვა ველები სახელის, ელფოსტის და მესიჯის შესასვლელად -->
-          <form action="">
-            <div class="names">
-              <div class="firstname">
-                <!-- ეს სახელის ველია, სადაც შეგვიძლია ჩავწეროთ სახელი -->
-                <label for="fname">First Name *</label>
-                <br />
-                <input
-                  class="fname"
-                  type="text"
-                  id="fname"
-                  name="fname"
-                  required
-                />
-                <!-- ეს required ნიშნავს რომ ველი სავალდებულოა და არ იმუშავებს ფორმა თუ ეს ველი ცარიელია -->
-              </div>
-              <div class="lastname">
-                <!-- ეს გვარის ველია, სადაც შეგვიძლია ჩავწეროთ გვარი -->
-                <label for="lname">Last Name *</label>
-                <br />
-                <input
-                  class="lname"
-                  type="text"
-                  id="lname"
-                  name="lname"
-                  required
-                />
-              </div>
-            </div>
-            <div class="email">
-              <!-- ეს იმეილის ველია, სადაც შეგვიძლია ჩავწეროთ იმეილი -->
-              <label for="email">Email *</label>
-              <br />
+
+        <!-- ეს ფორმის დასაწყისია, სადაც არის სხვადასხვა ველები სახელის, ელფოსტის და მესიჯის შესასვლელად -->
+
+        <form action="">
+          <div class="names">
+            <div class="form-group">
+              <!-- ეს სახელის ველია, სადაც შეგვიძლია ჩავწეროთ სახელი -->
+              <label for="fname">First Name *</label>
+
               <input
-                class="emailinput"
-                type="email"
-                id="email"
-                name="email"
+                class="fname"
+                type="text"
+                id="fname"
+                name="fname"
+                required
+              />
+              <!-- ეს required ნიშნავს რომ ველი სავალდებულოა და არ იმუშავებს ფორმა თუ ეს ველი ცარიელია -->
+            </div>
+            <div class="form-group">
+              <!-- ეს გვარის ველია, სადაც შეგვიძლია ჩავწეროთ გვარი -->
+              <label for="lname">Last Name *</label>
+
+              <input
+                class="lname"
+                type="text"
+                id="lname"
+                name="lname"
                 required
               />
             </div>
-            <div class="message">
-              <!-- ეს მესიჯის ველია, სადაც შეგვიძლია ჩავწეროთ მესიჯი, სპეციალური თეგი გამოვიყენეთ დიდი ადგილისთვის -->
-              <label for="message">message...</label>
-              <br />
-              <textarea
-                class="messageinput"
-                id="message"
-                name="message"
-                rows="5"
-                required
-              ></textarea>
-            </div>
-            <!-- ეს კი ფორმის გასაშვები ღილაკია -->
-            <button class="submit" type="submit">Submit</button>
-          </form>
-        </div>
+          </div>
+
+          <!-- ეს იმეილის ველია, სადაც შეგვიძლია ჩავწეროთ იმეილი -->
+          <div class="form-group">
+            <label for="emailId">Email *</label>
+            <input
+              class="emailinput"
+              type="email"
+              id="emailId"
+              name="email"
+              required
+            />
+          </div>
+
+          <div class="message form-group">
+            <!-- ეს მესიჯის ველია, სადაც შეგვიძლია ჩავწეროთ მესიჯი, სპეციალური თეგი გამოვიყენეთ დიდი ადგილისთვის -->
+            <label for="message">message...</label>
+
+            <textarea
+              class="messageinput"
+              id="message"
+              name="message"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <!-- ეს კი ფორმის გასაშვები ღილაკია -->
+          <button class="submit" type="submit">Submit</button>
+        </form>
       </section>
 
       <!-- ეს კი ბოლოსართის ბოლო ნაწილი სადაც არის კოპირაითი -->
