@@ -1,7 +1,8 @@
 .myblog_mtavari {
   display: flex;
   flex-direction: column;
-  width: 60rem;
+  width: 80%;
+  max-width: 60rem;
   margin-bottom: 0rem;
   padding-bottom: 2rem;
   border-bottom: 0.1rem solid black;
@@ -94,4 +95,24 @@
   left: 0.8rem;
   font-size: 1.3rem;
   font-weight: 700;
+}
+
+@media (max-width: 1000px) {
+  .myblognav {
+    justify-content: center;
+  }
+  .mtliani {
+    align-items: center;
+  }
+  .mtliani .myblogsurati_texti {
+    width: 90%;
+    max-width: 25rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mtliani .myblogsurati_texti img {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: none;
+  }
 }/*# sourceMappingURL=travel.css.map */

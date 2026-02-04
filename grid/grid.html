@@ -1,11 +1,10 @@
-<!--/* https://ru.wix.com/website-template/view/html/2502?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates&tpClick=view_button&esi=f45129d3-26f5-4268-8feb-b4977c7388fd*/-->
-<!-- https://nikolozitsalughelashvili.github.io/html_css/ -->
+<!-- https://grid-masterclass.webflow.io/ -->
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Top 5</title>
+    <title>grid</title>
     <!-- ეს გუგლის ფონტების ლინკებია, რომელიც გვჭირდება რომ ვებგვერდზე გამოვიყენოთ Work Sans ფონტი -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,7 +26,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="travel.css" />
+    <link rel="stylesheet" href="grid.css" />
   </head>
   <body>
     <input type="checkbox" id="burgermenu" />
@@ -42,7 +41,7 @@
       <a href="../myblog.html">My Blog</a>
       <a href="#contact">Contact</a>
       <a href="../login.html">Login</a>
-      <a href="../grid/grid.html">Grid</a>
+       <a href="grid.html">Grid</a>
       <!-- <a href="../404.html">404</a> -->
       <div class="mobile-nav-socials">
         <a
@@ -66,7 +65,7 @@
         <!-- id-ს დახმარებით ჩვენ შეგვიძლია ღილაკზე დაჭერისას შესაბამის ადგილას ჩამოსვლა -->
         <a href="../index.html">Home</a>
         <a href="../about.html">About</a>
-        <a href="../myblog.html" class="selected">My Blog</a>
+        <a href="../myblog.html" >My Blog</a>
         <a href="#contact">Contact</a>
         <a
           href="https://www.google.com/webhp"
@@ -89,149 +88,172 @@
           ></a>
         </div>
         <a href="../login.html">Login</a>
-        <a href="../grid/grid.html">Grid</a>
+         <a href="grid.html" class="selected">Grid</a>
         <!-- <a href="../404.html">404</a> -->
       </nav>
     </header>
-    <main>
-      <div class="myblog_mtavari">
-        <div class="myblognav">
-          <a href="allposts.html">All Posts</a>
-          <a href="travel.html">Travel</a>
-          <a href="mytop5.html" class="selected">My Top5</a>
-          <a href="art&culture.html">Art & Culture</a>
+
+    <div class="grid-container">
+      <div class="box1">
+        <div class="textconteiner">
+          <div class="text">
+            <p>IPHONE 6S</p>
+            <br />
+            <h2>3D Touch. 12MP photos. 4K video.One powerful phone</h2>
+            <br />
+            <br />
+            <p>Learn more or visit an Apple Store today</p>
+          </div>
         </div>
-
-        <div class="mtliani">
-          <div class="myblogsurati_texti">
-            <img
-              alt="5 Songs That Make Me REALLY Happy"
-              class="gallery-item-visible gallery-item gallery-item-preloaded"
-              data-hook="gallery-item-image-img"
-              data-idx="0"
-              src="https://static.wixstatic.com/media/c22c23_5ab44dfe10f84b5e90e19db16bd06ae3~mv2.png/v1/fill/w_454,h_341,fp_0.50_0.50,q_95,enc_avif,quality_auto/c22c23_5ab44dfe10f84b5e90e19db16bd06ae3~mv2.webp"
-              loading="eager"
-              style="width: 454px; height: 340.5px"
-            />
-
-            <div class="myblogtexti">
-              <div class="trgsamtertil">
-                <p>Mar 23, 2023 · 1 min read</p>
-                <div class="samtertil">
-                  <div class="tert1">.</div>
-                  <div class="tert2">.</div>
-                  <div class="tert3">.</div>
-                </div>
-              </div>
-
-              <div class="galurjeba">
-                <h1>5 Songs That Make Me REALLY Happy</h1>
-                <p>
-                  Create a blog post subtitle that summarizes your post in a few
-                  short, punchy sentences and entices your audience to continue
-                  reading....
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="myblogsurati_texti">
-            <img
-              alt="5 Questions to Ask Yourself Before Getting Married"
-              class="gallery-item-visible gallery-item gallery-item-preloaded"
-              data-hook="gallery-item-image-img"
-              data-idx="1"
-              src="https://static.wixstatic.com/media/c22c23_968ebfce0b8944cb8996a7b906554be1~mv2.png/v1/fill/w_454,h_341,fp_0.50_0.50,q_95,enc_avif,quality_auto/c22c23_968ebfce0b8944cb8996a7b906554be1~mv2.webp"
-              loading="eager"
-              style="width: 454px; height: 340.5px"
-            />
-
-            <div class="myblogtexti">
-              <div class="trgsamtertil">
-                <p>Mar 23, 2023 · 1 min read</p>
-                <div class="samtertil">
-                  <div class="tert1">.</div>
-                  <div class="tert2">.</div>
-                  <div class="tert3">.</div>
-                </div>
-              </div>
-
-              <div class="galurjeba">
-                <h1>5 Questions to Ask Yourself Before Getting Married</h1>
-                <p>
-                  Create a blog post subtitle that summarizes your post in a few
-                  short, punchy sentences and entices your audience to continue
-                  reading....
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="myblogsurati_texti">
-            <img
-              alt="5 Pizza Places You Must Know"
-              class="gallery-item-visible gallery-item gallery-item-preloaded"
-              data-hook="gallery-item-image-img"
-              data-idx="2"
-              src="https://static.wixstatic.com/media/c22c23_4e6a13e173d64a33b3eeb200879654e0~mv2.jpg/v1/fill/w_454,h_341,fp_0.50_0.50,q_90,enc_avif,quality_auto/c22c23_4e6a13e173d64a33b3eeb200879654e0~mv2.webp"
-              loading="eager"
-              style="width: 454px; height: 340.5px"
-            />
-
-            <div class="myblogtexti">
-              <div class="trgsamtertil">
-                <p>Mar 23, 2023 · 2 min read</p>
-                <div class="samtertil">
-                  <div class="tert1">.</div>
-                  <div class="tert2">.</div>
-                  <div class="tert3">.</div>
-                </div>
-              </div>
-
-              <div class="galurjeba">
-                <h1>5 Pizza Places You Must Know</h1>
-                <p>
-                  Create a blog post subtitle that summarizes your post in a few
-                  short, punchy sentences and entices your audience to continue
-                  reading....
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="myblogsurati_texti">
-            <img
-              alt="Top 5 Items Under 20$ I Can't Live Without"
-              class="gallery-item-visible gallery-item gallery-item-preloaded"
-              data-hook="gallery-item-image-img"
-              data-idx="3"
-              src="https://static.wixstatic.com/media/c22c23_ce814068dce044c7b79559dc0c26b79c~mv2.png/v1/fill/w_454,h_341,fp_0.50_0.50,q_95,enc_avif,quality_auto/c22c23_ce814068dce044c7b79559dc0c26b79c~mv2.webp"
-              loading="eager"
-              style="width: 454px; height: 340.5px"
-            />
-
-            <div class="myblogtexti">
-              <div class="trgsamtertil">
-                <p>Mar 23, 2023 · 1 min read</p>
-                <div class="samtertil">
-                  <div class="tert1">.</div>
-                  <div class="tert2">.</div>
-                  <div class="tert3">.</div>
-                </div>
-              </div>
-
-              <div class="galurjeba">
-                <h1>Top 5 Items Under 20$ I Can't Live Without</h1>
-                <p>
-                  Create a blog post subtitle that summarizes your post in a few
-                  short, punchy sentences and entices your audience to continue
-                  reading....
-                </p>
-              </div>
-            </div>
-          </div>
+        <img
+          src="https://uploads-ssl.webflow.com/5bc242f45a5ed923b1704210/5bc2f42d9f9d5c2db96e7aa2_Img.png"
+          width="249"
+          id="w-node-43c015eaa8a1"
+          alt=""
+          class="image"
+        />
+      </div>
+      <div class="box2">
+        <div class="text">
+          <p>LEARN MORE</p>
+          <br />
+          <h1>How to Use Rotary Evaporator in Chemical Labs</h1>
+          <br />
+          <a href="#">Download now</a>
         </div>
       </div>
-    </main>
+      <div class="box3">
+        <img
+          src="https://uploads-ssl.webflow.com/5bc242f45a5ed923b1704210/5bc2f42e5b2ebf1f70525e52_Keyboard.png"
+          width="319"
+          alt=""
+        />
+        <div class="text3">
+          <h2>Our Brand New Keyboard</h2>
+          <br />
+          <a href="#">LEARN ></a>
+        </div>
+      </div>
+      <div class="box4">
+        <div class="textconteiner4">
+          <div class="text4">
+            <p>IMAC.RETINA</p>
+            <br />
+            <h2>Hardly a month passes these days where</h2>
+          </div>
+        </div>
+        <div class="imigconteiner">
+          <img
+            src="https://uploads-ssl.webflow.com/5bc242f45a5ed923b1704210/5bc4451fac429126a5d9f264_Macintosh.png"
+            width="231"
+            srcset="
+              https://uploads-ssl.webflow.com/5bc242f45a5ed923b1704210/5bc4451fac429126a5d9f264_Macintosh-p-500.png 500w,
+              https://uploads-ssl.webflow.com/5bc242f45a5ed923b1704210/5bc4451fac429126a5d9f264_Macintosh.png       848w
+            "
+            sizes="(max-width: 479px) 100vw, 450px"
+            alt=""
+            class="image-2"
+          />
+        </div>
+      </div>
 
+      <div class="box5">
+        <div class="text5">
+          <p>
+            Apple may be experimenting in the virtual reality space. The company
+            has been granted a patent for a head-mounted virtual reality device
+            that would use the iPhone screen as the display.
+          </p>
+          <p>
+            <br />
+            <a href="#">DOWNLOAD NOW ›</a>
+          </p>
+        </div>
+      </div>
+      <div class="box6">
+        <div class="circle">
+          <div class="ovali">
+            <i class="fa-solid fa-flag" style="color: #ffd43b"></i>
+            <p>POPULAR</p>
+          </div>
+          <img
+            src="https://uploads-ssl.webflow.com/5bc242f45a5ed923b1704210/5bc2f42de46b0e56a5607bd7_Floppy.png"
+            width="239"
+            alt=""
+            class="image-3"
+          />
+          <h3>MEET</h3>
+        </div>
+        <div class="text6">
+          <h2>iCloud</h2>
+          <br />
+          <p>
+            With iCloud, you always have the latest versions of your most
+            important things — like documents, apps, notes, and contacts — on
+            whatever device you’re using.
+          </p>
+        </div>
+        <div class="ovali2">LEARN MORE</div>
+      </div>
+      <div class="box7">
+        <img
+          src="https://uploads-ssl.webflow.com/5bc242f45a5ed923b1704210/5bc2f42dccad941a506d145c_Controller.png"
+          width="248"
+          alt=""
+          class="image-4"
+        />
+        <div class="text7">
+          <h2>Games ourpasion</h2>
+          <br />
+          <br />
+          <br />
+          <a href="#">LEARN ›</a>
+        </div>
+      </div>
+      <div class="box8">
+        <div class="ovali8">BEST CHOICE</div>
+        <div class="text8">
+          <h2>Much MuchBetter</h2>
+          <h2>Experience</h2>
+        </div>
+        <div class="imigconteiner8">
+          <img
+            src="https://uploads-ssl.webflow.com/5bc242f45a5ed923b1704210/5bc2e078ccad94811f6d0da3_iPad%20Pro.png"
+            width="90%"
+            srcset="
+              https://uploads-ssl.webflow.com/5bc242f45a5ed923b1704210/5bc2e078ccad94811f6d0da3_iPad%20Pro-p-500.png  500w,
+              https://uploads-ssl.webflow.com/5bc242f45a5ed923b1704210/5bc2e078ccad94811f6d0da3_iPad%20Pro.png       1310w
+            "
+            sizes="90vw"
+            alt=""
+            class="image-5"
+          />
+        </div>
+      </div>
+      <div class="box9">
+        <div class="circle9">
+          <img
+            src="https://uploads-ssl.webflow.com/5bc242f45a5ed923b1704210/5bc2f42dac429123bdd925dc_twitter.png"
+            width="43.5"
+            alt=""
+          />
+          <h1>Connect with Twitter</h1>
+        </div>
+      </div>
+      <div class="box10">
+        <div class="ovali10">POPULAR</div>
+        <p>Much MuchBetter Experience</p>
+      </div>
+      <div class="box11">
+        <img
+          src="https://uploads-ssl.webflow.com/5bc242f45a5ed923b1704210/5bc2f42eccad9470ed6d145d_TV.png"
+          width="271"
+          alt=""
+          class="image-6"
+        />
+        <p>More than just a display, it’s a vision</p>
+      </div>
+    </div>
     <footer id="contact">
       <section class="contact">
         <div class="isari">
